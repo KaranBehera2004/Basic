@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+  </head>
+  <body>
+    <form>
+        <input type="text" name="name" placeholder="Name" autofocus size="30" autocomplete="off"> <br><br>
+        <input type="email" name="email" placeholder="Email" size="30"> <br><br>
+        <input type="password" name="pwd" placeholder="Passweord" size="30"> <br><br>
+
+        Gender:
+        <input type="radio" name="gender" value="male" checked>Male
+        <input type="radio" name="gender" value="female">Female
+        <input type="radio" name="gender" value="other" disabled>Other <br><br>
+
+        Language:
+        <input type="checkbox" name="lang" value="eng" checked>English
+        <input type="checkbox" name="lang" value="hin">Hindi
+        <input type="checkbox" name="lang" value="odia" disabled>odia <br><br>
+
+
+        <!--Dropdouwn list-->
+        <label for="location">Location</label>
+        <select name="location" id="location" >
+            <option value="hydrabad">Hydrabad</option>
+            <option value="pune">Pune</option>
+            <option value="delhi">Delhi</option> <br><br>
+        </select> <br><br>
+
+        <!--Textarea-->
+
+     <textarea name="feedback" id="" placeholder="feedback" rows="10" cols="20"></textarea> <br><br>
+     <input type="submit">
+    </form>
+  </body>
+</html>

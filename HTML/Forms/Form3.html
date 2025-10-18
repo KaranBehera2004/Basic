@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+  </head>
+  <body>
+    <form>
+       <label for="name">Enter name:</label>
+        <input type="text" name="name" minlength="3" maxlength="15" id="name">    <br><br>
+
+        <label for="email">Enter Email:</label>         
+        <input type="email" name="email" required id="email">    <br><br>
+
+        <label for="pwd">Enter password:</label>        
+        <input type="password" name="password" required id="pwd">   <br><br>
+
+        <label for="age">Age : </label>
+        <input type="number" min="18" max="50" id="age"> <br><br>
+        Gender:
+        <input type="radio" name="gender" value="male" id="male">
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" value="female" id="female">
+        <label for="female">Female</label> <br><br>
+
+        language:
+        <input type="checkbox" name="lang" value="eng" id="eng">
+        <label for="eng">English</label>
+
+        <input type="checkbox" name="lang" value="hindi" id="hindi">
+        <label for="hindi">Hindi</label> <br><br>
+
+        <input type="submit" value="Register">
+        <!-- <input type="reset"> -->
+    </form>
+  </body>
+</html>
