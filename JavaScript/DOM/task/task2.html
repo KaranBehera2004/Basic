@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+  </head>
+  <body>
+    <button id="btn1">-</button>
+    <span>1</span>
+    <button id="btn2">+</button>
+
+
+    <script>
+        let btn1 = document.getElementById("btn1");
+        let btn2 = document.getElementById("btn2");
+        let span = document.querySelector("span");
+
+        btn1.addEventListener("click",()=>{
+            let num = Number(span.innerText);
+            if(num > 1)
+            {
+                num -=1;
+            }
+            span.innerText = num;
+        })
+        btn2.addEventListener("click",()=>{
+            let num2 = Number(span.innerText);
+            num2 += 1;
+            span.innerText = num2;
+        })
+    </script>
+  </body>
+</html>

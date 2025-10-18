@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+  </head>
+  <body>
+    <button id="btn1">ON</button>
+
+
+    <script>
+        let btn1 = document.getElementById("btn1");
+
+        btn1.addEventListener("click",()=>{
+            if (btn1.innerText === "ON") {
+                btn1.innerText ="OFF";
+            }
+            else
+            {
+                btn1.innerText="ON";
+            }
+        })
+    </script>
+  </body>
+</html>

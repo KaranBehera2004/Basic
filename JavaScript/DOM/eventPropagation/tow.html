@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <style>
+        div{
+            background-color: white;
+        }
+        #grand_parent{
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #parent{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #child{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="grand_parent">grand_parent (red)
+        <div id="parent">parent (green)
+            <div id="child">child ( blue)</div>
+        </div>
+    </div>
+    <script src="two.js"></script>
+  </body>
+</html>
