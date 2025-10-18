@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <style>
+        #parent
+        {
+            height: 400px;
+            width: 500px;
+            border: 2px solid;
+            position: relative;
+        }
+        #parent>div{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            font-size: 26px;
+            color: white;
+        }
+        #child1
+        {
+            background-color: red;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+        }
+        #child2
+        {
+            background-color: green;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+        <div id="child1">1</div>
+        <div id="child2">2</div>
+    </div>
+  </body>
+</html>

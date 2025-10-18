@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+            animation-name: movingele;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            margin-top: 100px;
+            /* border-radius: 50%; */
+        }
+        @keyframes movingele {
+            0%{
+                margin-left: 0px;
+                transform: rotate(0deg);
+                border-radius: 0px;
+            }
+            50%
+            {
+                margin-left: 400px;
+                transform: rotate(360deg);
+                background-color: green;
+                border-radius: 50%;
+            }
+            100%
+            {
+                margin-right: 400px;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <style>
+        #div1,#div2
+        {
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            transition: all 3s;
+        }
+        #div1:hover{
+            background-color: green;
+            height: 400px;
+            width: 400px;
+            border-radius: 50%;
+        }
+        button{
+            border: none;
+            padding: 10px;
+            transition: all 1s;
+        }
+        button:hover
+        {
+            background-color: aqua;
+        }
+        #div2
+        {
+            background-image: url(../images/images.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        #div2:hover
+        {
+            background-image: url(../images/51ASBMekOYL._AC_UF350\,350_QL80_.jpg);
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Transition Property</h1>
+    <p>It is used to change the values smoothly</p>
+    <p>in this property we have to specify 2 things
+        1. property name
+        2. duration(in sec)
+    </p>
+    <div id="div1"></div><br>
+    <button>Click here</button><br><br>
+    <div id="div2"></div>
+  </body>
+</html>

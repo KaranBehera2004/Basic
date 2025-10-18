@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+  </head>
+  <style>
+    table>thead>tr>th{
+        background-color: blueviolet;
+    }
+    table>thead>tr>th+th{
+        background-color: green;
+    }
+    table>thead>tr>th+th+th{
+        background-color: red;
+    }
+    table>tbody>tr>td{
+        background-color: cadetblue;
+    }
+    table>tbody>tr>td+td{
+        background-color: darkorange;
+    }
+    table>tbody>tr>td+td+td{
+        background-color: black;
+    }
+    table>tbody>tr+tr>td+td{
+        background-color: fuchsia;
+    }
+    table>tbody>tr+tr>td+td+td{
+        background-color: aqua;
+    }
+    table>tbody>tr+tr+tr>td{
+        background-color: darkorange;
+    }
+    table>tbody>tr+tr+tr>td+td+td{
+        background-color: lightblue;
+    }
+    ol>li+li+li+li+li{
+        background-color: red;
+    }
+    ol>li+li+li+li{
+        background-color: green;
+    }
+    ol>li+li+li{
+        background-color: aqua;
+    }
+    ol>li+li{
+        background-color: orange;
+    }
+    ul>ul>li{
+        background-color: blue;
+    }
+    /* ul>li+li+li+li
+    {
+        background-color: brown;
+    } */
+    /* ul>li+li+li+li{
+        background-color: black;
+    } */
+  </style>
+  <body>
+    <table border="5" cellpadding="20">
+        <thead>
+            <tr>
+                <th>heading</th>
+                <th>heading</th>
+                <th>heading</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+            </tr>
+            <tr>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+            </tr>
+            <tr>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+            </tr>
+        </tbody>
+    </table>
+    <ol>
+        <li>list items</li>
+        <li>list items</li>
+        <li>list items</li>
+        <li>list items</li>
+        <li>list items</li>
+    </ol>
+    <ul>
+        <li>list items</li>
+        <li>list items</li>
+        <li>list items
+            <ul>
+                <li>list items</li>
+                <li>list items</li>
+                <li>list items</li>
+                <li>list items</li>
+                <li>list items</li>
+            </ul>
+        </li>
+        <li>list items</li>
+        <li>list items</li>
+    </ul>
+  </body>
+</html>

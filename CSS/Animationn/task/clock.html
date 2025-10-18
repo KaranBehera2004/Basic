@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Clock</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #222;
+    }
+
+    .clock {
+      width: 250px;
+      height: 250px;
+      border: 8px solid white;
+      border-radius: 50%;
+      position: relative;
+    }
+
+    .hand {
+      position: absolute;
+      bottom: 125px;
+      left: 125px;
+      transform-origin: bottom center;
+      /* transform: translateX(-50%); */
+    }
+
+    /* Minute hand */
+    .minute {
+      width: 6px;
+      height: 90px;
+      background: lightblue;
+      animation-name: rotateMinute ;
+      animation-duration: 3600s; /* 1 full round = 1 hour */
+      animation-iteration-count: infinite;
+    }
+
+    /* Second hand */
+    .second {
+      width: 3px;
+      height: 110px;
+      background: red;
+      animation-name: rotateSecond ;
+      animation-duration:  60s ;
+      animation-iteration-count:  linear infinite; /* 1 full round = 1 min */
+    }
+
+    /* Animations */
+    @keyframes rotateMinute {
+      from { transform: translateX(-50%) rotate(0deg); }
+      to   { transform: translateX(-50%) rotate(360deg); }
+    }
+
+    @keyframes rotateSecond {
+      from { transform: translateX(-50%) rotate(0deg); }
+      to   { transform: translateX(-50%) rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="clock">
+    <div class="hand minute"></div>
+    <div class="hand second"></div>
+  </div>
+</body>
+</html>

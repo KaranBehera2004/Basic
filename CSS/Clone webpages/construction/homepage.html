@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Constructor Company Website Templet | WIX</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJJWXp0pNU6VhP5xRpyylaQ6lwcxH_QHPRvCUYvXt1ndEjfCevLnBRDE9U9QlJDp7GdpY&usqp=CAU">
+    <head rel="icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJJWXp0pNU6VhP5xRpyylaQ6lwcxH_QHPRvCUYvXt1ndEjfCevLnBRDE9U9QlJDp7GdpY&usqp=CAU">
+    </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: rgb(242, 241, 241);
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+        #main {
+            height: 900px;
+            width: 100%;
+            background-image: url(https://static.wixstatic.com/media/c837a6_ae4f4741c31844bfba715de2983231fdf000.jpg/v1/fill/w_1506,h_658,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/c837a6_ae4f4741c31844bfba715de2983231fdf000.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+        }
+
+        #div1 {
+            text-align: center;
+            height: 80px;
+            width: 100px;
+            background-color: hsla(0, 9%, 2%, 0.6);
+            color: white;
+            /* margin-top: 50px; */
+        }
+
+        #navbar {
+            background-color: black;
+            width: 730px;
+            /* margin-left: 600px;
+            margin-top: -70px; */
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #innerdiv1,
+        #innerdiv2,
+        #innerdiv3,
+        #innerdiv4,
+        #innerdiv5 {
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            /* border: 1px solid white; */
+        }
+
+        #innerdiv6last {
+            background-color: red;
+            height: 100px;
+            width: 200px;
+        }
+
+        #container3 {
+            color: white;
+            margin-left: 200px;
+            margin-top: 100px;
+        }
+
+        #fh1 {
+            font-size: 100px;
+        }
+
+        #para1 {
+            font-size: 30px;
+            margin-top: -5px;
+            margin-left: 10px;
+        }
+
+        button {
+            height: 70px;
+            width: 200px;
+            padding: 20px;
+            font-size: 16px;
+            margin-top: 30px;
+        }
+
+        #btn1 {
+            background-color: rgb(255, 119, 0);
+            border: none;
+        }
+
+        #btn2 {
+            background-color: transparent;
+            border: 1px solid white;
+            margin-left: 20px;
+            color: white;
+        }
+
+        #btn1:hover {
+            background-color: black;
+            border: 1px solid rgb(255, 119, 0);
+            color: rgb(255, 119, 0);
+        }
+
+        #btn2:hover {
+            color: black;
+            background-color: rgb(255, 119, 0);
+            border: none;
+        }
+
+        #main2 {
+            height: 3700px;
+            width: 100%;
+            background-color: white;
+            /* border: 2px solid red; */
+        }
+
+        #maininnerdiv1 {
+            margin-left: 100px;
+            margin-top: 00px;
+            background-color: transparent;
+        }
+
+        #mainpara1 {
+            font-size: 25px;
+        }
+
+        #mainpara2 {
+            font-size: 50px;
+            font-weight: bold;
+            display: inline-block;
+            color: rgb(255, 98, 0);
+        }
+
+        #mainbtn1 {
+            height: 60px;
+            width: 200px;
+            background-color: rgb(255, 98, 0);
+            color: black;
+            border: none;
+            margin-left: 1200px;
+            margin-top: -1200px;
+        }
+
+        #main2para1,
+        #main2para2 {
+            line-height: 40px;
+            padding: 10px;
+            text-align: justify;
+        }
+
+        #maininnerdiv2 {
+            margin-left: 100px;
+            margin-top: 300px;
+            height: 0px;
+            width: 400px;
+            /* border: 2px solid red; */
+        }
+
+        #main2h3 {
+            padding: 10px;
+            font-size: 30px;
+        }
+
+        span {
+            padding: 10px;
+        }
+
+        #main2img1 {
+            margin-left: 700px;
+            margin-top: -200px;
+        }
+
+        #main2innerdiv3 {
+            height: 900px;
+            width: 700px;
+            /* border: 2px solid red; */
+            background-image: url(https://static.wixstatic.com/media/c837a6_069649aec1074db192a4cd263d81a897~mv2.jpg/v1/fill/w_804,h_1298,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_069649aec1074db192a4cd263d81a897~mv2.jpg);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size:cover;
+            background-attachment: fixed;
+            margin-left: 100px;
+            margin-top: 100px;
+        }
+
+        #main2innerdiv4 {
+            height: 400px;
+            width: 400px;
+            /* border: 2px solid red; */
+            margin-left: 900px;
+            margin-top: -500px;
+        }
+
+        #main2h3_2 {
+            padding: 10px;
+            font-size: 30px;
+        }
+
+        #main2para3,
+        #main2para4 {
+            line-height: 30px;
+            padding: 10px;
+            font-family: sans-serif;
+        }
+
+        #main2img2 {
+            margin-top: 250px;
+            width: 800px;
+        }
+
+        #main_2innerdiv_5 {
+            margin-left: 900px;
+            margin-top: -700px;
+        }
+
+        #main_2img2 {
+            padding: 30px;
+            margin-right: -150px;
+        }
+
+        #main_2h3_3 {
+            padding: 10px;
+            font-size: 30px;
+            margin-left: 20px;
+        }
+
+        #main_2para5 {
+            line-height: 30px;
+            margin-left: 20px;
+        }
+
+        #main_2innerdiv_5>span {
+            margin-left: 20px;
+        }
+
+        #main3 {
+            height: 900px;
+            width: 100%;
+            background-image: url(https://static.wixstatic.com/media/c837a6_eb05560eb8764160936d511f9cb1af73~mv2.jpg/v1/fill/w_1883,h_1118,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_eb05560eb8764160936d511f9cb1af73~mv2.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            margin-top: -100px;
+
+        }
+
+        #main3_innerdiv1 {
+            height: 880px;
+            width: 98.90%;
+            background-color: hsla(0, 9%, 2%, 0.5);
+            padding: 10px;
+        }
+        #main3_mostinnerdiv1_h3,#main3_mostinnerdiv1_h1,#main3_mostinnerdiv1_p,table
+        {
+            color: white;
+            margin-left: 60px;
+            /* margin-top: 50px;
+            margin-left: 100px; */
+        }
+        #main3_mostinnerdiv1_h1
+        {
+            margin-top: 30px;
+            margin-left: 100px;
+        }
+        #main3_mostinnerdiv1_h3
+        {
+            margin-left: 70px;
+            font-size: 25px;
+            margin-top: 60px;
+            margin-left: 100px;
+        }
+        #main3_mostinnerdiv1_p
+        {
+            line-height: 40px;
+            margin-top: 50px;
+            margin-left: 100px;
+        }
+        td{
+            color: white;
+        }
+        #main3_mostinnerdiv1_h1
+        {
+            color: rgb(255, 102, 0);
+            font-weight: bold;
+            font-size: 50px;
+        }
+        #main3_mostinnerdiv1
+        {
+            margin-top: 100px;
+            background-color: transparent;
+            /* border: 2px solid red; */
+            width: 1000px;
+            height: 600px;
+            
+        }
+        .td_h1
+        {
+            font-size: 55px;
+        }
+        #main3_innerdiv1_h2,#main3_innerdiv1_p,#main3_innerdiv1_img
+        {
+            color: white;
+            margin-left: 100px;
+        }
+        #main4
+        {
+            height: 400px;
+            width: 600px;
+            /* border: 2px solid red; */
+            margin-left: 100px;
+            margin-top: 100px;
+        }
+        #main4_h1{
+            font-size: 40px;
+            color: rgb(255, 81, 0);
+            padding: 10px;
+        }
+        #main4_h3,#main4_p{
+            margin-top: 20px;
+            padding: 10px;
+        }
+        #main4_p
+        {
+            line-height: 30px;
+            margin-top: -20px;
+        }
+        #main4_h3
+        {
+            font-size: 25px;
+        }
+        #main4_btn
+        {
+            height: 60px;
+            width: 200px;
+            background-color: rgb(255, 81, 0);
+            border: none;
+            margin-left: 1100px;
+            margin-top: -200px;
+        }
+        #main4_btn:hover{
+            background-color: transparent;
+            border: 1px solid black;
+        }
+        .table_div
+        {
+            color: black;
+            height: 230px;
+            width: 250px;
+            /* border: 2px solid red; */
+            text-align: left;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            /* align-items: center; */
+            background-color: white;
+            padding-left: 10px;
+            gap: 20px;
+        }
+        #poject_table{
+            margin-left: 120px;
+        }
+        #main5
+        {
+            padding: 25px;
+            /* border: 2px solid red; */
+            width: 500px;
+            margin-left: 100px;
+            margin-top: 80px;
+        }
+        #main5_h2,#main5_h1,#main5_p
+        {
+            padding: 10px;
+        }
+        #main5_h1
+        {
+            font-size: 45px;
+            color: rgb(255, 81, 0);
+        }
+        #main5_p
+        {
+            line-height: 30px;
+        }
+        #main6_p
+        {
+            font-weight: bold;
+            font-size: 45px;
+             color: rgb(255, 81, 0);
+             text-align: justify;
+             text-align-last: center;
+        }
+        #main6_h4
+        {
+            text-align-last: center;
+            font-size: 25px;
+        }
+        #main6
+        {
+            /* border: 2px solid red; */
+            margin-top: 100px;
+        }
+        .table_img
+        {
+            height: 110px;
+            width: 110px;
+        }
+        #img_table
+        {
+            margin-left: 100px;
+        }
+        #hr
+        {
+            width: 1240px;
+            margin-left: 160px;
+            /* border: 1px solid black; */
+            background-color: black;
+            margin-top: -30px;
+        }
+        #nav_table>td
+        {
+            text-align: left;
+        }
+        #main_second_div
+        {
+            background-color: hsla(0, 9%, 2%, 0.6);
+            height: 900px;
+            width: 100%;
+        }
+        #navbar
+        {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            /* border: 5px solid red; */
+            height: 100px;
+            width: 90%;
+            background-color: transparent;
+            padding-right: 100px;
+        }
+        #div_flex
+        {
+            color: red;
+            height: 50px;
+            width: 100px;
+            background-color: hsla(0, 9%, 2%, 0.5);
+        }
+        #div_flex2
+        {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-left: 270px;
+            background-color: hsla(0, 9%, 2%, 0.5);
+            height: 70px;
+            width: 850px;
+        }
+        #anchor_div
+        {
+            /* background-color: white; */
+            height: 70px;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 30px;
+        }
+        #anchor_div:hover{
+            background-color: orangered;
+            color: black;
+        }
+        a{
+            color: white;
+        }
+        #div_flex3
+        {
+            background-color: orangered;
+            height: 70px;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            /* margin-right: 180px; */
+        }
+        #div_flex3:hover
+        {
+            background-color: black;
+            border: 1px solid orangered;
+        }
+        #constrution_div
+        {
+            height: 70px;
+            width: 100px;
+            /* border: 2px solid red; */
+            text-align: center;
+            padding: 10px;
+            margin-top: 50px;
+            margin-left: 170px;
+        }
+        #table_footer
+        {
+            color: black;
+            margin-left: 370px;
+            margin-top: -160px;
+            width: 1200px;
+        }
+        #footer_para1,#footer_para2,#footer_para3
+        {
+            color: black;
+            line-height: 30px;
+        }
+        .footer_anchor
+        {
+            color: black;
+            padding: 10px;
+        }
+        #footer_h2
+        {
+            font-size: 50px;
+        }
+        #footer_btn
+        {
+            background-color: orangered;
+            border: none;
+            margin-top: 50px;
+            margin-left: 100px;
+        }
+        #footer_btn:hover
+        {
+            background-color: rgb(239, 239, 239);
+            border: 1px solid black;
+            color: black;
+        }
+        #last_para
+        {
+            margin-left: 180px;
+            margin-top: 80px;
+        }
+        #wix
+        {
+            color: black;
+            text-decoration: underline;
+        }
+        #last_anchor
+        {
+            color: black;
+            margin-left: 1300px;
+            text-decoration: underline;
+        }
+        .project_icon
+        {
+            height: 70px;
+            width: 70px;
+        }
+        .table_div>img,.table_div>h4{
+            margin-left: 30px;
+        }
+    </style>
+
+<body>
+    <div id="main">
+       <div id="main_second_div">
+        <div id="navbar">
+           <div id="div_flex">
+                <h2>MCR</h2>
+                <p>Construction</p>
+           </div>
+           <div id="div_flex2">
+            <div id="anchor_div"><a href="service.html">Services</a></div>
+            <div id="anchor_div"><a href="">Projects</a></div>
+            <div id="anchor_div"><a href="">About Us</a></div>
+            <div id="anchor_div"><a href="">Carrers</a></div>
+            <div id="anchor_div"><a href="">Contact</a></div>
+           </div>
+           <div id="div_flex3">
+            <a id="call_anchor" href="">Call Now!</a>
+           </div>
+        </div>
+        <div id="container3">
+            <h1 id="fh1">Building a <br> Concreate Future</h1>
+            <p id="para1">Honest, Reliable Builders since 1968</p>
+            <button id="btn1">View Projects</button>
+            <button id="btn2">Contact Us</button>
+        </div>
+       </div>
+    </div>
+    </div>
+    <div id="main2">
+        <div id="maininnerdiv1">
+            <p id="mainpara1">Building Is What We Do</p>
+            <p id="mainpara2">MCR Construction Is <br> Leading Quality Projects</p>
+        </div>
+        <button id="mainbtn1">Read More</button>
+        <div id="maininnerdiv2">
+            <span>_____</span> <br>
+            <h3 id="main2h3">Commercial</h3>
+            <p id="main2para1">I'm a paragraph. Click here to add your own text <br> and edit me. It’s easy. Just click
+                “Edit Text” or <br> double click me to add your own content and make <br> changes to the font. Feel free
+                to drag and drop me <br> anywhere you like on your page.</p> <br><br>
+            <p id="main2para2">This is a great space to write a long text about your <br> company and your services. You
+                can use this space <br> to go into a little more detail about your company. <br> Talk about your team
+                and what services you <br> provide. Tell your visitors the story of how you came <br> up with the idea
+                for your business and what makes <br> you different from your competitors.</p>
+        </div>
+        <img id="main2img1"
+            src="https://static.wixstatic.com/media/c837a6_136f489b41d445c38ff79f772d719210~mv2.jpg/v1/fill/w_946,h_1120,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_136f489b41d445c38ff79f772d719210~mv2.jpg"
+            alt="" height="1000px" width="700px">
+        <div id="main2innerdiv3"></div>
+        <div id="main2innerdiv4">
+            <span>______</span>
+            <h3 id="main2h3_2">Infrastructure</h3>
+            <p id="main2para3">I'm a paragraph. Click here to add your own text <br> and edit me. It’s easy. Just click
+                “Edit Text” or <br> double click me to add your own content and <br> make changes to the font.</p>
+            <br><br>
+            <p id="main2para4">This is a great space to write a long text about <br> your company and your services. You
+                can use this <br> space to go into a little more detail about your <br> company. Talk about your team
+                and what <br> services you provide.</p>
+        </div>
+        <img id="main2img2"
+            src="https://static.wixstatic.com/media/c837a6_47223d00a4af4c01bde4b5a6b06ea3ad~mv2.jpg/v1/fill/w_941,h_1390,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_47223d00a4af4c01bde4b5a6b06ea3ad~mv2.jpg"
+            alt="" height="1000px">
+        <div id="main_2innerdiv_5">
+            <span>______</span>
+            <h3 id="main_2h3_3">Residential</h3>
+            <img id="main_2img2"
+                src="https://static.wixstatic.com/media/c837a6_a656204e75b84246a3f517833decf462~mv2.jpg/v1/fill/w_960,h_640,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/GettyImages-157284152.jpg"
+                alt="" height="250px" width="400px"> <br>
+            <p id="main_2para5">I'm a paragraph. Click here to add your own text and edit <br> me. It’s easy. Just click
+                “Edit Text” or double click me to <br> add your own content and make changes to the font. Feel <br> free
+                to drag and drop me anywhere you like on your page. <br> I’m a great place for you to tell a story and
+                let your users <br> know a little more about you.</p>
+        </div>
+    </div><br>
+    <div id="main3">
+        <div id="main3_innerdiv1">
+            <div id="main3_mostinnerdiv1">
+                <h3 id="main3_mostinnerdiv1_h3">Who We Are</h3><br>
+                <h1 id="main3_mostinnerdiv1_h1">About Our Company</h1><br>
+                <p id="main3_mostinnerdiv1_p">I'm a paragraph. Click here to add your own text and edit me. <br> It’s easy. Just click “Edit Text”
+                    or double click me to add your <br> own content and make changes to the font. I’m a great place for
+                    <br> you to tell a story and let your users know more about you.</p>
+                <table cellpadding="30px" cellspacing="50px">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h1 class="td_h1">1968</h1><br>
+                                <p>Year of Establishment</p><br>
+                                <span>________</span>
+                            </td>
+                            <td>
+                                <h1 class="td_h1">282</h1><br>
+                                <p>Projects Completed</p><br>
+                                <span>________</span>
+                            </td>
+                            <td>
+                                <h1 class="td_h1">150</h1><br>
+                                <p>Professional Employees</p><br>
+                                <span>________</span>
+                            </td>
+                            <td>
+                                <h1 class="td_h1">35</h1><br>
+                                <p>Business Partners</p><br>
+                                <span>________</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <img id="main3_innerdiv1_img" src="https://static.wixstatic.com/media/c837a6_e63c086cc4024d82b724ca041dde4092~mv2.png/v1/fill/w_418,h_168,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/signature.png" alt="" height="90px" width="200px">
+            <h2 id="main3_innerdiv1_h2">Aaron Masterson</h2><br>
+            <p id="main3_innerdiv1_p">CEO, MCR Construction</p>
+        </div>
+    </div>
+    <div id="main4">
+        <h3 id="main4_h3">Our Services</h3>
+        <h1 id="main4_h1">We Offer a Range of Services <br> to Meet Your Needs</h1>
+         <button id="main4_btn">Read More</button>
+        <p id="main4_p">I'm a paragraph. Click here to add your own text and <br> edit me. Let your users get to know you.</p>
+    </div>
+    <table id="poject_table" cellpadding="50px" cellspacing="12px">
+        <tbody>
+            <tr>
+                <td>
+                    <div></div>
+                </td>
+                <td>
+                    <div class="table_div table_div1">
+                        <img class="project_icon" src="../Media/building-2-svgrepo-com.svg" alt="">
+                        <h4>Commercial <br> Construction</h4>
+                    </div>
+                </td>
+                <td>
+                    <div class="table_div table_div1">
+                        <img class="project_icon" src="../Media/home-1-svgrepo-com (2).svg" alt="">
+                        <h4>Residential <br> Construction</h4>
+                    </div>
+                </td>
+                <td>
+                    <div class="table_div table_div1">
+                        <img class="project_icon" src="../Media/building-2-svgrepo-com.svg" alt="">
+                        <h4>Pre- <br>Construction</h4>
+                    </div>
+                </td>
+                <td>
+                    <div class="table_div table_div1">
+                        <img class="project_icon" src="../Media/construction-worker-svgrepo-com.svg" alt="">
+                        <h4>Site <br> Management</h4>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="table_div table_div1">
+                        <img class="project_icon" src="../Media/excavator-svgrepo-com.svg alt="">
+                        <h4>Special <br> Projects</h4>
+                    </div>
+                </td>
+                <td>
+                    <div class="table_div table_div1">
+                        <img class="project_icon" src="../Media/construction-crane-engineering-svgrepo-com.svg alt="">
+                        <h4>Infrastructure <br> Construction</h4>
+                    </div>
+                </td>
+                <td>
+                    <div class="table_div table_div1">
+                        <img class="project_icon" src="../Media/gear-11-svgrepo-com.svg" alt="">
+                        <h4>Civil <br> Engineering</h4>
+                    </div>
+                </td>
+                <td>
+                    <div class="table_div table_div1">
+                        <img class="project_icon" src="../Media/showel-firefighter-tool-svgrepo-com.svg" alt="">
+                        <h4>Landscape <br> Construction</h4>
+                    </div>
+                </td>
+                <td>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="main5">
+        <h2 id="main5_h2">What We do</h2>
+        <h1 id="main5_h1">Our Projects</h1>
+        <p id="main5_p">I'm a paragraph. Click here to add your own text and edit me. <br> I’m a great place for you to tell a <br> story and let your users know a little more about you.</p>
+    </div>
+    <div id="main6">
+        <h4 id="main6_h4">Our Clients</h4>
+        <p id="main6_p">We believe each client is a <br> long term partnership</p>
+    </div>
+    <table id="img_table" cellspacing="130px">
+        <tbody>
+            <tr>
+                <td><img class="table_img" src="https://static.wixstatic.com/media/c837a6_9d8041a73c8c42f7bb3332ba49d4fd8a~mv2.png/v1/fill/w_192,h_190,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Hardware_Store_Logos-11.png" alt=""></td>
+                <td><img class="table_img" src="https://static.wixstatic.com/media/c837a6_ce86bd9135d74c289a3c77ddfbc16d57~mv2.png/v1/fill/w_272,h_248,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Hardware_Store_Logos-12.png" alt=""></td>
+                <td><img class="table_img" src="https://static.wixstatic.com/media/c837a6_896f729c44a947f79ac653223a9b1c1b~mv2.png/v1/fill/w_208,h_190,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Hardware_Store_Logos-14.png" alt=""></td>
+                <td><img class="table_img" src="https://static.wixstatic.com/media/c837a6_5941a277bffd45ef89c67c38afd28775~mv2.png/v1/fill/w_272,h_82,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Hardware_Store_Logos-02.png" alt=""></td>
+                <td><img class="table_img" src="https://static.wixstatic.com/media/c837a6_682d04d5e7b844a08c04c293869bea06~mv2.png/v1/fill/w_264,h_82,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Hardware_Store_Logos-07.png" alt=""></td>
+            </tr>
+            <tr>
+                <td><img class="table_img" src="https://static.wixstatic.com/media/c837a6_2685f63e32b04c56b654c7699a54c206~mv2.png/v1/fill/w_272,h_96,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Hardware_Store_Logos-06.png" alt=""></td>
+                <td><img class="table_img" src="https://static.wixstatic.com/media/c837a6_c6120d1c2ecd4f71a339b220d6d53246~mv2.png/v1/fill/w_302,h_110,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Hardware_Store_Logos-04.png" alt=""></td>
+                <td><img class="table_img" src="https://static.wixstatic.com/media/c837a6_220cb74232c9417aaeca243b6bd4849f~mv2.png/v1/fill/w_302,h_96,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Hardware_Store_Logos-05.png" alt=""></td>
+                <td><img class="table_img" src="https://static.wixstatic.com/media/c837a6_c1bb36403127496aaaed4afa142b1af1~mv2.png/v1/fill/w_320,h_70,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Hardware_Store_Logos-10.png" alt=""></td>
+                <td><img class="table_img" src="https://static.wixstatic.com/media/c837a6_66d8b0abceef469f9bd2b5ddb4e39fa2~mv2.png/v1/fill/w_330,h_96,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Hardware_Store_Logos-13.png" alt=""></td>
+            </tr>
+        </tbody>
+    </table>
+    <hr id="hr">
+    <div id="constrution_div">
+        <h2>MCR</h2>
+        <p>Construction</p>
+    </div>
+    <table id="table_footer" cellspacing="30px" cellpadding="100px" >
+        <thead>
+            <tr align="left">
+                <th ><h2 class="footer_h2">Head Office</h2></th>
+                <th><h2 class="footer_h2">Socials</h2></th>
+                <th><h2 class="footer_h2">Inquiries</h2></th>
+                <th>
+                    <button id="footer_btn">Contact Us</button>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <p id="footer_para1">
+                        500 Terry Francine Street <br> San Francisco, CA 94158
+                    </p><br><br>
+                    <p id="footer_para2">
+                        123-456-7890 <br> info@mysite.com
+                    </p>
+                </td>
+                <td>
+                   <a class="footer_anchor" href="">Facebook</a><br><br>
+                   <a class="footer_anchor" href="">Instagram</a><br><br>
+                   <a class="footer_anchor" href="">Linkdin</a>
+                </td>
+                <td>
+                    <p id="footer_para3">
+                        For any inquiries, questions <br> or commendations, please <br> call: 123-456-7890
+                    </p>
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p id="last_para">
+        © 2035 by MCR Construction. Powered and secured by <a id="wix">Wix</a>
+    </p>
+    <a id="last_anchor" href="#main">Go Up</a>
+    
+    <br><br><br><br><br><br><br><br>
+</body>
+
+</html>

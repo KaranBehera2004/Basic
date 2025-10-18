@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         ul{
+            list-style-type: none;
+            display: grid;
+            grid-template-rows: repeat(3,1fr);
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+            height: 200px;
+            width: 150px;
+        }
+        li{
+            border: 2px solid red;
+        }
+        .child1{
+            grid-row: 1/4;
+            grid-column: 1/2;
+        }
+        .child2{
+            grid-row: 1/2;
+            grid-column: 2/4;
+        }
+        .child6{
+            grid-row: 2/4;
+            grid-column: 4/5;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="child1">grid items1</li>
+        <li class="child2">grid items2</li>
+        <li class="child3">grid items3</li>
+        <li class="child4">grid items4</li>
+        <li class="child5">grid items5</li>
+        <li class="child6">grid items6</li>
+        <li class="child7">grid items7</li>
+        <li class="child8">grid items8</li>
+    </ul>
+</body>
+</html>

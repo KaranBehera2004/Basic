@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Constructor Company Website Templet | WIX</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJJWXp0pNU6VhP5xRpyylaQ6lwcxH_QHPRvCUYvXt1ndEjfCevLnBRDE9U9QlJDp7GdpY&usqp=CAU">
+    <head rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJJWXp0pNU6VhP5xRpyylaQ6lwcxH_QHPRvCUYvXt1ndEjfCevLnBRDE9U9QlJDp7GdpY&usqp=CAU">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+       #navbar
+       {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 50px;
+            /* border: 2px solid red; */
+       }
+       #div_flex2
+       {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0px;
+            margin-left: 0px;
+       }
+       #anchor_div
+       {
+            height: 70px;
+            width: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid black; */
+       }
+       #div_flex3
+       {
+            /* margin-right: 200px; */
+            border: 1px solid black;
+            height: 70px;
+            width: 180px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: orangered;
+       }
+       #div_flex3:hover
+       {
+            background-color: black;
+            border: 1px solid orangered;
+            color: orangered;
+       }
+       a{
+        text-decoration: none;
+        color: white;
+       }
+       #div_bg
+       {
+        background-color: hsla(0, 8%, 12%, 0.6);
+        border: 1px solid orangered;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 100px;
+        gap: 3px;
+        /* width: 700px; */
+       }
+       #anchor_div:hover
+       {
+            background-color: rgb(238, 237, 237);
+            color: black;
+       }
+       #anchor_div1
+       {
+            background-color: rgb(238, 237, 237);
+            height: 70px;
+            width: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+       }
+       #service_anchor
+       {
+        color: black;
+       }
+       .nav_anchor
+       {
+        color: white;
+       }
+       .nav_anchor:hover
+       {
+        color: black;
+       }
+       #call_anchor:hover
+       {
+        color: orangered;
+       }
+       #div1
+       {
+        margin-left: 120px;
+        margin-top: 100px;
+       }
+       #div1>h1{
+        font-size: 50px;
+        color: orangered;
+        padding: 10px;
+       }
+       #div1>h3{
+            font-size: 25px;
+            padding: 10px;
+       }
+       #div1>p
+       {
+        line-height: 30px;
+        padding: 10px;
+       }
+       #div2
+       {
+        margin-left: 100px;
+        margin-top: 300px;
+       }
+       #div2>p{
+        line-height: 30px;
+       }
+       #img_1
+       {
+        margin-left: 600px;
+        margin-top: -600px;
+       }
+       #img_2
+       {
+        margin-left: 100px;
+        margin-top: -4px;
+       }
+       #div3
+       {
+        margin-left: 1000px;
+        margin-top: -450px;
+       }
+       #div3>p
+       {
+            line-height: 30px;
+       }
+       #div4
+       {
+        margin-left: 100px;
+        margin-top: 250px;
+       }
+       #div4>p
+       {
+        line-height: 30px;
+       }
+       #img_3
+       {
+        margin-left: 610px;
+        margin-top: -575px;
+       }
+       #img_4
+       {
+        margin-left: 100px;
+        margin-top: -4px;
+       }
+       #div5
+       {
+        margin-left: 1000px;
+        margin-top: -650px;
+       }
+       #div5>p
+       {
+        line-height: 30px;
+       }
+       #div6>p
+       {
+        line-height: 30px;
+       }
+       #div6
+       {
+        margin-top: 450px;
+        margin-left: 100px;
+       }
+       #img_5
+       {
+        margin-left: 600px;
+        margin-top: -575px;
+       }
+       #img_6
+       {
+        margin-left: 100px;
+        margin-top: -4px;
+       }
+       #div7
+       {
+        margin-left: 1000px;
+        margin-top: -400px;
+       }
+       #div8>p
+       {
+        line-height: 30px;
+       }
+       #div8
+       {
+        margin-top: 300px;
+        margin-left: 100px;
+       }
+       #img_7
+       {
+        margin-left: 610px;
+        margin-top: -572px;
+       }
+       #img_8
+       {
+        margin-left: 100px;
+        margin-top: -4px;
+       }
+       #div9>p
+       {
+        line-height: 30px;
+       }
+       #div9
+       {
+        margin-left: 1000px;
+        margin-top: -500px;
+       }
+       .footer_anchor
+       {
+        color: black;
+       }
+       #div10
+       {
+        display: flex;
+        justify-content: space-around;
+        /* margin-right: 150px; */
+        margin-left: 200px;
+        margin-top: -50px;
+        align-items: center;
+        /* border: 2px solid red; */
+        /* width: 1000px; */
+       }
+       .inner_div1>p
+       {
+        line-height: 30px;
+       }
+       button
+       {
+        height: 60px;
+        width: 200px;
+        background-color: orangered;
+        border: none;
+        /* margin-left: 1200px; */
+        /* margin-bottom: 800px; */
+       }
+       button:hover
+       {
+        background-color: transparent;
+        border: 1px solid black;
+       }
+       #div11>a
+       {
+        color: black;
+        margin-right: 100px;
+        text-decoration: underline;
+       }
+       #div11>p{
+        margin-left: 100px;
+       }
+       #div11
+       {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       }
+       span{
+        text-decoration: underline;
+       }
+       #div_flex
+       {
+        margin-left: 100px;
+        margin-top: 0px;
+        background-color: hsla(0, 8%, 12%, 0.6);
+        width: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 70px;
+        width: 130px;
+        border: 2px solid orangered;
+       }
+       #div_flex>p{
+        margin-top: -20px;
+       }
+       #div_flex>h1,#div_flex>p{
+        color: white;
+       }
+       hr{
+        width: 1320px;
+        /* border: px solid black; */
+       }
+       #div11>p>a{
+        color: black;
+        text-decoration: underline;
+       }
+       #mcr2
+       {
+        /* background-color: hsla(0, 8%, 12%, 0.6); */
+        width: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 70px;
+        width: 130px;
+        /* border: 2px solid orangered; */
+        margin-left: 100px;
+        /* margin-top: 100px; */
+       }
+       #mcr2>p{
+        margin-top: -20px;
+       }
+    </style>
+</head>
+  <body>
+    <div id="navbar">
+           <div id="div_flex">
+                <h1 id="mcr"><a href="homepage.html">MCR</a></h1>
+                <p>Construction</p>
+           </div>
+           <div id="div_bg">
+                <div id="div_flex2">
+                    <div id="anchor_div1"><a id="service_anchor" href="">Services</a></div>
+                    <div id="anchor_div"><a class="nav_anchor" href="">Projects</a></div>
+                    <div id="anchor_div"><a class="nav_anchor href="">About Us</a></div>
+                    <div id="anchor_div"><a class="nav_anchor href="">Carrers</a></div>
+                    <div id="anchor_div"><a class="nav_anchor href="">Contact</a></div>
+                </div>
+                <div id="div_flex3">
+                    <a id="call_anchor" href="">Call Now!</a>
+                </div>
+           </div>
+    </div>
+    <div id="div1">
+        <h3>Our Services</h3>
+        <h1>We Offer a Range of Services <br> to Meet Your Needs</h1>
+        <p>I'm a paragraph. Click here to add your own text and <br> edit me. Let your users get to know you.</p>
+    </div>
+    <div id="div2">
+        <h2>Commercial Construction</h2>
+        <p>I'm a paragraph. Click here to add your own text <br> and edit me. It’s easy. Just click “Edit Text” or <br> double click me to add your own content and make <br> changes to the font. Feel free to drag and drop me <br> anywhere you like on your page.</p> <br>
+        <p>This is a great space to write a long text about your <br> company and your services. You can use this space <br> to go into a little more detail about your company. <br> Talk about your team and what services you provide.</p>
+    </div>
+    <img id="img_1" src="https://static.wixstatic.com/media/c837a6_e02e4a7aa8d445f585c434ed55b60df8~mv2.jpg/v1/fill/w_980,h_878,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_e02e4a7aa8d445f585c434ed55b60df8~mv2.jpg" alt="" height="750px" width="900px">
+    <img id="img_2" src="https://static.wixstatic.com/media/c837a6_9045f280be72474491617fe62485c878~mv2.jpg/v1/fill/w_993,h_878,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_9045f280be72474491617fe62485c878~mv2.jpg" alt="" height="700px" width="800px">
+    <div id="div3">
+        <h2>Residential Construction</h2>
+        <p>I'm a paragraph. Click here to add your own text <br> and edit me. It’s easy. Just click “Edit Text” or <br> double click me to add your own content and make <br> changes to the font. Feel free to drag and drop me <br> anywhere you like on your page.</p> <br>
+        <p>This is a great space to write a long text about your <br> company and your services. You can use this space <br> to go into a little more detail about your company. <br> Talk about your team and what services you provide.</p>
+    </div>
+    <div id="div4">
+        <h2>Pre-Construction</h2>
+        <p>I'm a paragraph. Click here to add your own text <br> and edit me. It’s easy. Just click “Edit Text” or <br> double click me to add your own content and make <br> changes to the font. Feel free to drag and drop me <br> anywhere you like on your page.</p>
+        <br>
+        <p>This is a great space to write a long text about your <br> company and your services. You can use this space <br> to go into a little more detail about your company. <br> Talk about your team and what services you provide.</p>
+    </div>
+    <img id="img_3" src="https://static.wixstatic.com/media/c837a6_659d1a1caa714f2a971a079286859e0e~mv2.jpg/v1/fill/w_980,h_878,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_659d1a1caa714f2a971a079286859e0e~mv2.jpg" alt="" height="700px" width="800px">
+    <img id="img_4" src="https://static.wixstatic.com/media/c837a6_922c11766e1248a4ba69c5b5747d336a~mv2.jpg/v1/fill/w_980,h_878,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_922c11766e1248a4ba69c5b5747d336a~mv2.jpg" alt="" height="800px" width="800px">
+    <div id="div5">
+        <h2>Special Projects</h2>
+        <p>I'm a paragraph. Click here to add your own text <br> and edit me. It’s easy. Just click “Edit Text” or <br> double click me to add your own content and make <br> changes to the font. Feel free to drag and drop me <br> anywhere you like on your page.</p> <br>
+        <p>This is a great space to write a long text about your <br> company and your services. You can use this space <br> to go into a little more detail about your company. <br> Talk about your team and what services you provide.</p>
+    </div>
+    <div id="div6">
+        <h2>Site Management</h2>
+        <p>I'm a paragraph. Click here to add your own text <br> and edit me. It’s easy. Just click “Edit Text” or <br> double click me to add your own content and make <br> changes to the font. Feel free to drag and drop me <br> anywhere you like on your page.</p> <br>
+        <p>This is a great space to write a long text about your <br> company and your services. You can use this space <br> to go into a little more detail about your company. <br> Talk about your team and what services you provide.</p>
+    </div>
+    <img id="img_5" src="https://static.wixstatic.com/media/c837a6_567d2b6e76584c129e68e1179ec80fa2~mv2.jpg/v1/fill/w_980,h_878,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_567d2b6e76584c129e68e1179ec80fa2~mv2.jpg" alt="" height="700px" width="800px">
+    <img id="img_6" src="https://static.wixstatic.com/media/c837a6_273511ee20ef47c99f6aeeeb89831157~mv2.jpg/v1/fill/w_980,h_878,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_273511ee20ef47c99f6aeeeb89831157~mv2.jpg" alt="" height="600px" width="800px">
+  </img>
+   <div id="div7">
+        <h2>Infrastructure Construction</h2>
+        <p>I'm a paragraph. Click here to add your own text <br> and edit me. It’s easy. Just click “Edit Text” or <br> double click me to add your own content and make <br> changes to the font. Feel free to drag and drop me <br> anywhere you like on your page.</p> <br>
+        <p>This is a great space to write a long text about your <br> company and your services. You can use this space <br> to go into a little more detail about your company. <br> Talk about your team and what services you provide.</p>
+    </div>
+    <div id="div8">
+        <h2>Civil Engineering</h2>
+        <p>I'm a paragraph. Click here to add your own text <br> and edit me. It’s easy. Just click “Edit Text” or <br> double click me to add your own content and make <br> changes to the font. Feel free to drag and drop me <br> anywhere you like on your page.</p> <br>
+        <p>This is a great space to write a long text about your <br> company and your services. You can use this space <br> to go into a little more detail about your company. <br> Talk about your team and what services you provide.</p>
+    </div>
+    <img id="img_7" src="https://static.wixstatic.com/media/c837a6_8a5b905c90f546a7aac3c212d86b60be~mv2.jpg/v1/fill/w_980,h_878,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_8a5b905c90f546a7aac3c212d86b60be~mv2.jpg" alt="" height="700px" width="800px">
+    <img id="img_8" src="https://static.wixstatic.com/media/11062b_cdc62dad3d5945fb9c7aedaaadf3fbbf~mv2.jpg/v1/fill/w_980,h_878,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_cdc62dad3d5945fb9c7aedaaadf3fbbf~mv2.jpg" alt="" height="700px" width="800px">
+     <div id="div9">
+        <h2>Landscape Construction</h2>
+        <p>I'm a paragraph. Click here to add your own text <br> and edit me. It’s easy. Just click “Edit Text” or <br> double click me to add your own content and make <br> changes to the font. Feel free to drag and drop me <br> anywhere you like on your page.</p> <br>
+        <p>This is a great space to write a long text about your <br> company and your services. You can use this space <br> to go into a little more detail about your company. <br> Talk about your team and what services you provide.</p>
+    </div><br><br><br><br><br><br><br><br>
+    <hr>
+    <div id="mcr2">
+        <h2>MCR</h2>
+        <p>Construction</p>
+    </div>
+    <div id="div10">
+        <div class="inner_div1">
+            <h3>Head Office</h3>
+            <p>500 Terry Francine Street <br> Francisco, CA 94158</p>
+            <p>123-456-7890 <br>@mysite.com</p>
+        </div>
+        <div class="inner_div1">
+            <h3>Socials</h3>
+            <a class="footer_anchor" href="">Facebook</a><br><br>
+            <a class="footer_anchor" href="">Instagram</a><br><br>
+            <a class="footer_anchor" href="">Linkedin</a>
+        </div>
+        <div class="inner_div1">
+            <h3>Inquiries</h3>
+            <p>For any inquiries, questions <br> or commendations, please <br> call: 123-456-7890</p>
+        </div>
+        <button>Contact Us</button>
+    </div><br><br><br><br>
+    <div id="div11">
+        <p>© 2035 by MCR Construction. Powered and secured by <a href="https://www.wix.com/?utm_campaign=vir_created_with" target="_blank">Wix</a></p>
+        <a href="#navbar">Go Up</a>
+    </div>
+    <br><br><br><br>
+  </body>
+</html>

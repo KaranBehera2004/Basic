@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <style>
+        nav {
+            height: 150px;
+            width: 100%;
+            /* border: 1px solid white; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+			/* background-color: rgb(190, 202, 210); */
+        }
+        nav>div>h1{
+            font-size: 50px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+        }
+
+        #div1 {
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            gap: 50px;
+            padding-left: 10px;
+            /* background-color : white; */
+        }
+
+        #img1 {
+            height: 130px;
+            width: 130px;
+            opacity: 0.8;
+        }
+
+        .navbar {
+            /* background: #007BFF; */
+            padding: 15px;
+            display: flex;
+            /* justify-content: flex-end; */
+            align-items: center;
+            gap: 20px;
+            height: 50px;
+        }
+        form>button
+        {
+            height: 70px;
+            width: 250px;
+            margin-right: 150px;
+            font-size: 25px;
+            border-radius: 50px;
+            border: 1px solid rgb(235, 232, 232);
+            background-color: aliceblue;
+            box-shadow: 0px 0px 10px black;
+            
+        }
+        form>button:hover
+        {
+            background-color: rgba(227, 227, 235, 0.683);
+            border: 1px solid rgb(198, 192, 192);
+            box-shadow: 0px 0px 10px darkcyan;
+        }
+        #div2
+        {
+            height: 700px;
+            width: 100%;
+            /* border: 2px solid red; */
+            background-image: url(https://i.pinimg.com/1200x/47/a5/40/47a54046a8a0bf77b047d4189313297b.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            padding: 100px;
+        }
+        #div2>img{
+            height: 850px;
+            width: 1100px;
+        }
+        span
+        {
+            font-size: 100px;
+            margin-left: 50px;
+            color: darkcyan;
+        }
+        h1
+        {
+            margin-left: 50px;
+            font-size: 45px;
+	        color: rgba(100, 208, 181, 0.724);
+        }
+        p
+        {
+            margin-left: 50px;
+            font-size: 20px;
+            line-height: 35px;
+            margin-top: 30px;
+        }
+        #div3
+        {
+            width: 850px;
+            text-shadow: 0px 0px 10px white;
+        }
+    </style>
+  </head>
+  <body>
+     <nav>
+        <div id="div1">
+            <img id="img1" src="https://t3.ftcdn.net/jpg/05/14/36/48/360_F_514364850_xLOQX6SOY2qcjAIcTowsi3xYvHmhmvs0.jpg" alt="">
+            <h1>Smart HealthCare</h1>
+        </div>
+        <div class="navbar">
+            <form action="login.jsp">
+                <button>Login</button>
+            </form>
+        </div>
+    </nav>
+    <div id="div2">
+        <div id="div3">
+            <span>Because Every Life</span>
+            <h1>Deserves the Best Care.</h1>
+            <p>we believe that healthcare should be simple, transparent, and efficient. Our mission is to combine compassionate patient care with modern technology to create a smarter hospital experience. From patient registration to billing and record management, every process is designed to save time and reduce errors. With a team dedicated to excellence and innovation, we ensure that every patient receives quality care with trust and convenience at every step.</p>
+            </div>
+    </div>
+  </body>
+</html>

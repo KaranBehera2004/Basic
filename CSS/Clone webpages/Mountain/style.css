@@ -1,0 +1,138 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#parent1
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(2, 63, 109);
+}
+#parent1>#child2>a,#child3>a
+{
+    color: white;
+    text-decoration: none;
+}
+#parent1>#child2
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    /* border: 2px solid white; */
+    width: 800px;
+    margin-left: 200px;
+}
+#parent1_child1
+{
+    display: flex;
+    /* flex-shrink: 2; */
+    justify-content: center;
+    align-items: center;
+}
+#child3
+{
+    margin-right: 100px;
+}
+#parent2
+{
+    background-image: url(https://static.wixstatic.com/media/82fcd3_47a465bb9c6f4b52a0cc83f281806af8~mv2.jpg/v1/fill/w_2000,h_906,al_c,q_85,enc_avif,quality_auto/82fcd3_47a465bb9c6f4b52a0cc83f281806af8~mv2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+#parent2_child1_div
+{
+    height: 300px;
+    width: 800px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: 500px; */
+    
+}
+#parent2_child1_div>p
+{
+    font-size: 50px;
+}
+#parent2_child1_div>#first_para
+{
+    font-size: 30px;
+}
+#parent2_child1_div>button
+{
+    height: 60px;
+    width: 250px;
+    background-color: white;
+    border: 1px solid;
+    color: rgb(2, 63, 109);
+    font-weight: bold;
+    font-size: 15px;
+}
+#parent3
+{
+    height: 600px;
+    width: 100%;
+    /* border: 3px solid red; */
+}
+#parent3
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#parent3>#child1,#parent3>#child2,#parent3>#child3
+{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+}
+#parent3>#child1>p,#parent3>#child2>p,#parent3>#child3>p
+{
+    line-height: 30px;
+    text-align: justify;
+}
+#parent3>#child1>button,#parent3>#child2>button,#parent3>#child3>button
+{
+    height: 60px;
+    width: 200px;
+    background-color: white;
+    border: 1px solid;
+    font-size: 15px;
+    color: rgb(2, 63, 109);
+    font-weight: bold;
+}
+#parent3>#child1>span,#parent3>#child2>span,#parent3>#child3>span
+{
+    font-size: 35px;
+}
+#parent4
+{
+    background-image: url(https://static.wixstatic.com/media/82fcd3_96376843bac9407bb5b50891b78b6210~mv2.jpg/v1/fill/w_1883,h_849,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/82fcd3_96376843bac9407bb5b50891b78b6210~mv2.jpg);
+    height: 750px;
+    width: 100%;
+
+}
+#parent4_child_div
+{
+    height: 750px;
+    width: 100%;
+    background-color: hsla(199, 36%, 83%, 0.868);
+}

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>title</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    }
+
+    nav {
+      height: 180px;
+      width: 100%;
+      border: 2px solid red;
+    }
+
+    #img1 {
+      height: 180px;
+      width: 180px;
+    }
+
+    #div1 {
+      display: flex;
+      /* justify-content: center; */
+      align-items: center;
+      gap: 50px;
+      padding-left: 10px
+    }
+
+    #div1>h1 {
+      font-size: 70px;
+      color: rgba(154, 190, 89, 0.71);
+    }
+
+    #div3 {
+      /* height: 800px; */
+      width: 100%;
+      /* border: 2px solid green; */
+      display: flex;
+      justify-content: center;
+      margin-top: 100px;
+    }
+
+    #div4 {
+      height: 1350px;
+      width: 800px;
+      /* border: 2px solid black; */
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      align-items: center;
+      gap: 70px;
+      align-content: flex-start;
+      padding-top: 30px;
+      border-radius: 50px;
+      box-shadow: 0px 0px 30px black;
+      transition: all 1s;
+      background-color: aliceblue;
+    }
+    #div4:hover
+    {
+      transform: scale(1.1);
+      box-shadow: 0px 0px 30px rgba(159, 159, 220, 0.482);
+    }
+    #div4>h1
+    {
+       color: rgba(89, 156, 190, 0.822);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    form>input {
+      height: 50px;
+      width: 700px;
+      border-radius: 25px;
+      font-size: 20px;
+      padding: 20px;
+      box-shadow: 0px 0px 1px greenyellow;
+      border: 1px solid rgba(128, 128, 128, 0.333);
+    }
+    form>select>option
+    {
+      border-radius: 30px;
+      color: green;
+    }
+
+    form>label {
+      font-size: 25px;
+      padding-left: 10px;
+      color: darkslategray;
+    }
+    form>input:hover
+    {
+      box-shadow: 0px 0px 2px red;
+      outline: 1px solid green;
+    }
+
+    span {
+      color: red;
+      font-size: 20px;
+    }
+
+    #div5 {
+      height: 400px;
+      width: 300px;
+      border: 2px solid red;
+      display: flex;
+      flex-direction: column;
+    }
+
+    form>select {
+      height: 50px;
+      font-size: 20px;
+      padding-left: 10px;
+      border-radius: 30px;
+    }
+    textarea
+    {
+      border-radius: 30px;
+      height: 100px;
+      padding-left: 30px;
+      font-size: 20px;
+    }
+    #reset
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 10px;
+    }
+    button{
+      height: 50px;
+      width: 700px;
+      border-radius: 30px;
+      font-size: 20px;
+      background-color: rgba(194, 221, 194, 0.616);
+      border: 1px solid black;
+    }
+    button:hover
+    {
+      background-color: rgba(211, 211, 211, 0.322);
+    }
+    #div6
+    {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+      /* gap: 10px; */
+    }
+    #div6>input
+    {
+      height: 50px;
+      border-radius: 30px;
+      font-size: 20px;
+    }
+    #reset
+    {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div id="div1">
+      <img id="img1" src="icon.png" alt="">
+      <h1>Smart HealthCare</h1>
+    </div>
+    <div id="div2"></div>
+  </nav>
+  <div id="div3">
+    <div id="div4">
+      <h1>ADD PATIENT</h1>
+      <form action="">
+        <label>Enter Patient Name <span>*</span></label>
+        <input type="text">
+        <label>Enter Age <span>*</span></label>
+        <input type="text">
+
+        <label for="gender">Gender: <span>*</span></label>
+        <select id="gender" name="gender">
+           <option>Select</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        <label>Contact Number <span></span></label>
+        <input type="text" name="Contact_no">
+
+        <label>Address</label>
+        <textarea></textarea>
+
+        <label for="disease">Disease / Condition: <span>*</span></label>
+        <select id="disease" name="disease">
+          <option value="" selected disabled>Select Disease</option>
+          <option value="heart_attack">Heart Attack</option>
+          <option value="stroke">Stroke</option>
+          <option value="cancer">Cancer</option>
+          <option value="kidney_failure">Kidney Failure</option>
+          <option value="liver_failure">Liver Failure</option>
+          <option value="pneumonia">Pneumonia</option>
+          <option value="tuberculosis">Tuberculosis</option>
+          <option value="diabetes_complications">Diabetes Complications</option>
+          <option value="hypertension_complications">Hypertension Complications</option>
+          <option value="covid_severe">Severe COVID-19</option>
+          <option value="heart_disease">Heart Disease</option>
+          <option value="neurological_disorder">Neurological Disorder</option>
+          <option value="respiratory_failure">Respiratory Failure</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="doctor">Assign Doctor:</label>
+        <select id="doctor" name="doctor">
+          <option value="" selected disabled>Select Doctor</option>
+        </select>
+
+        <label for="room">Room Number:</label>
+        <select id="room" name="room">
+          <option value="" selected disabled>Select Room</option>
+          <option value="101">101 (General)</option>
+          <option value="102">102 (General)</option>
+          <option value="103">103 (ICU)</option>
+          <option value="104">104 (ICU)</option>
+          <option value="201">201 (Private)</option>
+          <option value="202">202 (Private)</option>
+          <option value="203">203 (VIP)</option>
+          <option value="204">204 (VIP)</option>
+        </select>
+        
+        <label>Admit Date <span>*</span></label>
+        <input type="date" name="admit_date">
+        <div id="div6">
+          <button name="Submit_btn" value="Submit_btn">Submit</button><br>
+          <button>Back</button>
+          <input type="reset" id="reset">
+        </div>
+        
+      </form>
+    </div>
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>

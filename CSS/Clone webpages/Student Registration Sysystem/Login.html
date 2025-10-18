@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        #div1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* border: 2px solid red; */
+            padding: 10px;
+            /* gap: 300px; */
+            box-shadow: 0px 50px 10px orange;
+        }
+
+        #div2>form>button {
+            height: 50px;
+            width: 200px;
+            border-radius: 30px;
+            font-size: 18px;
+
+        }
+
+        #div2>form {
+            height: 100px;
+            width: 400px;
+            /* border: 2px solid red;  */
+             margin-right: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        } *
+
+        #div3 {
+            height: 600px;
+            width: 100%;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: hsla(0, 0%, 0%, 0.595);
+        }
+
+        #div4,
+        #div5 {
+            height: 600px;
+            width: 800px;
+            /* border: 2px solid green; */
+        }
+
+        #div4 {
+            background-image: url(https://cbx-prod.b-cdn.net/COLOURBOX61322461.jpg?width=800&height=800&quality=70);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 20px;
+        }
+
+        #div6 {
+            height: 600px;
+            width: 800px;
+            background-color: hsla(0, 0%, 0%, 0.625);
+            opacity: 0.9.2;
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            /* justify-content: center; */
+            border-radius: 20px;
+            padding: 30px;
+        }
+
+        #div6>h1,
+        #div6>p {
+            color: white;
+        }
+
+        #div6>h1 {
+            font-size: 70px
+        }
+        #div7
+        {
+            height: 800px;
+            width: 100%;
+            border: 2px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(https://cbx-prod.b-cdn.net/COLOURBOX61322461.jpg?width=800&height=800&quality=70);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        #div8
+        {
+            height: 700px;
+            width: 500px;
+            /* border: 2px solid white; */
+            background-color: rgba(16, 15, 15, 0.41);
+            box-shadow: 0px 0px 30px white;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: space-around; */
+            align-items: center;
+            gap: 50px;
+            padding: 20px;
+            transition: all 2s;
+        }
+        #div8:hover
+        {
+            box-shadow: 0px 0px 30px orange;
+            transform: scale(1.1);
+        }
+        #div8>h1
+        {
+            font-size: 50px;
+            color: white;
+        }
+        #div8>form>label
+        {
+            font-size: 20px;
+            margin-left: 10px;
+            color: white;
+        }
+        #div8>form>input
+        {
+            height: 55px;
+            width: 380px;
+            border-radius: 50px;
+            background-color: rgba(190, 185, 185, 0.622);
+            border: none;
+            box-shadow: 0px 0px 50px gray;
+            padding-left: 20px;
+            font-size: 20px;
+            color: rgba(245, 239, 239, 0.96);
+            border: none;
+        }
+        #div8>form>input:hover
+        {
+            background-color: rgba(240, 248, 255, 0.537);
+            border: none;
+        }
+         #div8>form>input:focus
+         {
+            outline: none;
+         }
+        #div9
+        {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            /* border: 2px solid red; */
+            height: 200px;
+            /* gap: 30px; */
+        }
+        #btn1,#btn2
+        {
+            height: 55px;
+            width: 380px;
+            border-radius: 50px;
+            /* background-color: orange; */
+            font-size: 25px;
+            border: none;
+            box-shadow: 0px 0px 20px orange;
+        }
+        #bg
+        {
+            height: 800px;
+            width: 100%;
+            background-color: hsla(0, 0%, 0%, 0.747);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        a{
+            /* text-decoration: none; */
+            margin-left: 130px;
+            margin-top: 50px;
+            color: gray;
+        }
+        #div9>p{
+            color: orangered;
+            margin-top: -25px;
+        }
+        span
+        {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <div id="div1" class="d-flex   align-items-center">
+            <img src="https://i.pinimg.com/1200x/db/56/02/db56024feaa6aa51ae625bd8b0b56f43.jpg" height="100"
+                width="125">
+            <h1>Welcome to Student Portal</h1>
+        </div>
+        <div id="div2">
+            <form action="buttons">
+                <button class=" btn btn-outline-primary">Log In</button>
+                <button class=" btn btn-outline-info">Registration</button>
+            </form>
+        </div>
+    </div>
+    <div id="div7">
+        <div id="bg">
+            <div id="div8">
+                <h1>Log In</h1>
+                <form action="login" method="post">
+                    <label>Enter Email <span>*</span> </label><br><br>
+                    <input type="email" name="email"><br><br>
+                    <label>Enter password <span>*</span> </label><br><br>
+                    <input type="password" name="pwd"><br><br>
+                    <div id="div9">
+                        <button id="btn1" class="btn btn-outline-warning" name="login" value="login">Login</button><br><br>
+                        <p>No account? Click here to register</p>
+                        <button id="btn2" class="btn btn-outline-warning" name="Registration" value="Registration">Register</button>
+                    </div>
+                    <a href="">Forgot Password</a>
+                </form>
+            </div>
+        </div>
+        
+        
+    </div>
+
+</body>

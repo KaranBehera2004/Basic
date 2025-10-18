@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <style>
+        h1{
+            text-align: center;
+            height: 50px;
+            background-color: azure;
+        }
+        .parent{
+            height: 200px;
+            width: 100%;
+            /* border: 2px solid; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .names
+        {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .parent>div
+        {
+            height: 150px;
+            width: 150px;
+            /* border: 2px solid red; */
+            background-color: blueviolet;
+            transition: all 1s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        #div1:hover{
+            transform: rotate(45deg);
+        }
+        #div2:hover
+        {
+            transform: rotate(-45deg);
+        }
+        #div3:hover{
+            transform: rotateX(360deg);
+        }
+        #div4:hover
+        {
+            transform: rotateY(360deg);
+        }
+        #div5:hover
+        {
+            transform: rotateZ(360deg);
+        }
+        #div6:hover
+        {
+            transform: scale(0.5);
+        }
+        #div7:hover
+        {
+            transform: scale(2,3);
+        }
+        #div8:hover
+        {
+            transform: scaleX(1.5);
+        }
+        #div9:hover
+        {
+            transform: scaleY(1.5);
+        }
+        #div10:hover
+        {
+            transform: skew(360deg);
+        }
+        #div11:hover
+        {
+            transform: skew(-360deg);
+        }
+        #div12:hover
+        {
+            transform: skewX(45deg);
+        }
+        #div13:hover
+        {
+            transform: skewY(45deg);
+        }
+        #div14:hover
+        {
+            transform: translate(100px,100px);
+        }
+        #div15:hover
+        {
+            transform: translate(100px);
+        }
+        #div16:hover
+        {
+            transform: translateX(100px);
+        }
+        #div17:hover
+        {
+            transform: translateY(100px);
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Transform Property</h1>
+    <h2>rotate()</h2>
+    <div class="parent">
+        <div id="div1">Hover on Me</div>
+        <div id="div2">Hover on Me</div>
+        <div id="div3">Hover on Me</div>
+        <div id="div4">Hover on Me</div>
+        <div id="div5">Hover on Me</div>
+    </div>
+    <div class="names">
+        <p id="child1">rotate(45deg)</p>
+        <p id="child2">rotate(-45deg)</p>
+        <p id="child3">rotateX(360deg)</p>
+        <p id="child4">rotateY(360deg)</p>
+        <p id="child5">rotateZ(360deg)</p>
+    </div>
+    <hr>
+     <h2>scale()</h2>
+    <div class="parent">
+        <div id="div6">Hover on Me</div>
+        <div id="div7">Hover on Me</div>
+        <div id="div8">Hover on Me</div>
+        <div id="div9">Hover on Me</div>
+    </div>
+    <div class="names">
+        <p id="child6">scale(0.5)</p>
+        <p id="child7">scale(2,3)</p>
+        <p id="child8">scaleX(1.5)</p>
+        <p id="child9">scaleY(1.5)</p>
+    </div>
+    <hr>
+     <h2>skew()</h2>
+    <div class="parent">
+        <div id="div10">Hover on Me</div>
+        <div id="div11">Hover on Me</div>
+        <div id="div12">Hover on Me</div>
+        <div id="div13">Hover on Me</div>
+    </div>
+    <div class="names">
+        <p id="child10">skew(360deg)</p>
+        <p id="child11">skew(-360deg)</p>
+        <p id="child12">skewX(45deg)</p>
+        <p id="child13">skewY(45deg)</p>
+    </div>
+    <hr>
+     <h2>translate()</h2>
+    <div class="parent">
+        <div id="div14">Hover on Me</div>
+        <div id="div15">Hover on Me</div>
+        <div id="div16">Hover on Me</div>
+        <div id="div17">Hover on Me</div>
+    </div>
+    <div class="names">
+        <p id="child14">translate(100px)</p>
+        <p id="child15">translate(100px)</p>
+        <p id="child16">translateX(100px)</p>
+        <p id="child17">translateY(100px)</p>
+    </div>
+  </body>
+</html>

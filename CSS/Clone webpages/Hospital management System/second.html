@@ -1,0 +1,47 @@
+<!-- <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%> -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Dashboard</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            text-align: center;
+        }
+        .navbar {
+            background: #007BFF;
+            padding: 15px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 20px;
+            height: 70px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        h2 { margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="addPatient.jsp">➕ Add Patient</a>
+    <a href="viewPatients.jsp">👁 View Patients</a>
+    <a href="generateBill.jsp">💵 Generate Bill</a>
+    <a href="viewBills.jsp">📜 View Bills</a>
+    <a href="logout.jsp">🚪 Logout</a>
+</div>
+
+<h2>Welcome to Smart Hospital Billing System</h2>
+<p>Choose an option from the menu above.</p>
+
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!-- <%@ page import="java.sql.*" %> -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Patient</title>
+    <style>
+        nav {
+            height: 150px;
+            width: 100%;
+            border: 1px solid gray;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+        }
+
+        #div1 {
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            gap: 50px;
+            padding-left: 10px
+        }
+
+        #img1 {
+            height: 130px;
+            width: 130px;
+        }
+
+        .navbar {
+            /* background: #007BFF; */
+            padding: 15px;
+            display: flex;
+            /* justify-content: flex-end; */
+            align-items: center;
+            gap: 20px;
+            height: 50px;
+        }
+
+        .navbar a {
+            color: blue;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 50px;
+            color: rgba(100, 208, 181, 0.724);
+        }
+
+        h2 {
+            margin-top: 50px;
+        }
+
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+        }
+
+        .container {
+            width: 550px;
+            background: white;
+            margin: 50px auto;
+            /* padding: 20px; */
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+            height: 700px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: aliceblue;
+            padding-bottom: 50px;
+        }
+
+        form {
+            /* padding-left: 70px; */
+            margin-bottom: 20px
+        }
+
+        h2 {
+            text-align: center;
+            color: #007BFF;
+            font-size: 30px;
+        }
+
+        label {
+            font-weight: bold;
+            padding-left: 10px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 450px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            padding: 8px;
+            border-radius: 20px;
+            height: 40px;
+            border: 1px solid rgba(128, 128, 128, 0.333);
+            font-size: 18px;
+        }
+
+        input:hover {
+            box-shadow: 0px 0px 2px red;
+            outline: 1px solid green;
+        }
+
+        select {
+            width: 467px;
+            height: 38px;
+
+        }
+
+        .btn {
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 465px;
+            border-radius: 5px;
+            height: 38px;
+            border-radius: 30px;
+            margin-top: 20px;
+            /* border: 1px solid red; */
+            /* outline: none; */
+        }
+
+        .btn:hover {
+            background: #0056b3;
+        }
+
+        .msg {
+            text-align: center;
+            color: green;
+            font-weight: bold;
+        }
+
+        a {
+            font-size: 20px;
+            /* background-color: red; */
+            text-decoration: none;
+            color: gray;
+        }
+
+        .add_patient2 {
+            color: rgb(0, 128, 255);
+            font-weight: 500;
+        }
+
+        #main {
+            height: 800px;
+            width: 100%;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-between;
+            /* align-items: center; */
+        }
+
+        #side_navbar {
+            height: 800px;
+            width: 300px;
+            /* border: 2px solid green; */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 2px;
+            background-color: rgba(190, 207, 214, 0.575);
+            /* padding: 10px; */
+            /* padding-left: 50px; */
+        }
+
+        i {
+            height: 50px;
+            width: 50px;
+            background-color: red;
+        }
+
+        #user {
+            opacity: 0.7;
+            height: 40px;
+            width: 40px;
+            margin-right: 100px;
+        }
+
+        .add_patient {
+            background-color: rgb(230, 234, 237);
+            height: 70px;
+            width: 300px;
+            border-radius: 5px;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            padding-right: 20px;
+            padding-left: 90px;
+            /* border: 1px solid gray; */
+            transition: all 0.3s;
+            font-size: 22px;
+        }
+
+        .add_patient:hover {
+            background-color: skyblue;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div id="div1">
+            <img id="img1" src="icon.png" alt="">
+            <h1>Smart HealthCare</h1>
+        </div>
+        <div class="navbar">
+            <img src="user.png" alt="" id="user">
+        </div>
+    </nav>
+    <div id="main">
+        <div id="side_navbar">
+            <a href="#dashboar" id="addPatient">
+                <div class="add_patient add_patient1">Dashboard</div>
+            </a>
+            <a href="addpatient.html">
+                <div class="add_patient add_patient2">Add Patient</div>
+            </a>
+            <a href="view_patient.html" target="_self">
+                <div class="add_patient add_patient3">View Patients</div>
+            </a>
+            <a href="generateBill.jsp">
+                <div class="add_patient add_patient4">Generate Bill</div>
+            </a>
+            <a href="viewBills.jsp">
+                <div class="add_patient add_patient5">View Bills</div>
+            </a>
+            <a href="logout.jsp">
+                <div class="add_patient add_patient6">Logout</div>
+            </a>
+        </div>
+        <div class="container">
+            <h2>Add Patient</h2>
+            <form method="post">
+                <label>Name:</label><br>
+                <input type="text" name="name" required><br>
+
+                <label>Age:</label><br>
+                <input type="text" name="age" required><br>
+
+                <label>Gender:</label><br>
+                <select name="gender" required><br>
+                    <option value="">--Select--</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select><br>
+
+                <label>Contact:</label><br>
+                <input type="text" name="contact" required><br>
+
+                <label>Address:</label><br>
+                <textarea name="address" required></textarea><br>
+
+                <label>Disease:</label><br>
+                <input type="text" name="disease" required><br>
+
+                <label>Doctor Name:</label><br>
+                <input type="text" name="doctor" required><br>
+
+                <input type="submit" value="Add Patient" class="btn">
+            </form>
+        </div>
+    </div>
+    </div>
+
+
+</body>
+
+</html>

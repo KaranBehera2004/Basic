@@ -1,0 +1,690 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+#first_div
+{
+    display: flex;
+    height: 20px;
+    justify-content: flex-end;
+    /* align-items: center; */
+    padding-top: 10px;
+    padding-right: 50px;
+    gap: 20px;
+}
+#first_div>a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    /* border: 2px solid green; */
+}
+nav>#div1
+{
+    height: 50px;
+    width: 800px;
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 150px;
+}
+nav>#div1>a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+nav>#div2
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    width: 300px;
+    /* border: 2px solid blue; */
+    margin-right: 100px;
+}
+nav>#div2>input
+{
+    height: 50px;
+    width: 200px;
+    border-radius: 28px;
+    font-size: 18px;
+    padding: 10px;
+    background-color: rgb(236, 237, 235);
+    border: none;
+}
+/* nav>#div2>i
+{
+    height: 50px;
+    width: 500px;
+} */
+nav>h2
+{
+    margin-left: 50px;
+}
+#nav2
+{
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px ;
+    /* border: 2px solid red; */
+}
+#nav2>#div3
+{
+    display: flex;
+    /* justify-content: space-evenly; */
+    padding-left: 40px;
+    margin-top: -20px;
+    gap: 30px;
+    align-items: center;
+    height: 50px;
+    width: 600px;
+    /* border: 2px solid green; */
+}
+#nav2>#div3>a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#nav2>#div4>p
+{
+    padding: 10px;
+}
+#nav2>#div4
+{
+    display: flex;
+    height: 50px;
+    width: 300px;
+    /* border: 2px solid blue; */
+    justify-content: center;
+    gap: 0px;
+    align-items: center;
+    margin-top: -20px;
+    margin-right: 70px;
+}
+#div5
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    /* border: 2px solid red; */
+}
+#div5>#div6
+{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-left: 30px;
+}
+#div5>#div6>p
+{
+    margin-left: 5px;
+    color: rgb(78, 78, 236);
+}
+#div7
+{
+    height: 70px;
+    width: 500px;
+    /* border: 2px solid blue; */
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#div7>#div8>p
+{
+    text-align: right;
+}
+#div8_para2
+{
+    font-weight: bold;
+}
+#div9>button
+{
+    height: 30px;
+    width: 80px;
+    border-radius: 25px;
+    background-color: rgb(71, 126, 243);
+    border: none;
+    color: white;
+}
+#div10
+{
+    height: 40px;
+    width: 100%;
+    /* border: 2px solid red; */
+    padding-left: 40px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: rgba(242, 238, 238, 0.537);
+}
+#div10>a
+{
+    text-decoration: none;
+    color: black;
+}
+#div11
+{
+    height: 70px;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#div11>p
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+#div12
+{
+    height: 800px;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 30px;
+}
+#div12>img{
+    height: 600px;
+    width: 900px;
+    /* border: 2px solid green; */
+}
+#div13
+{
+    height: 800px;
+    width: 600px;
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    gap: 30px;
+   
+}
+#div13>#div14
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 2px solid red; */
+    height: 100px;
+    width: 400px;
+    background-color: rgba(242, 238, 238, 0.537);
+    border-radius: 30px;
+}
+#div13>#div14>#child
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#div13>#div14>#child>img{
+    height: 40px;
+    width: 40px;
+}
+#div13>#div14>#child>p{
+    font-size: 13px;
+}
+#div13>#div15
+{
+    height: 75px;
+    width: 400px;
+    border: 2px solid blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+#div15_para1
+{
+    font-weight: bold;
+    font-size: 20px;
+}
+#div15_para2
+{
+    text-align: right;
+}
+#reward_para
+{
+    margin-right: 150px;
+    margin-top: 20px;
+    color: rgb(113, 113, 231);
+}
+#Storage
+{
+    margin-right: 260px;
+}
+
+
+
+
+
+#right_bananer
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#div16,#div17,#div18
+{
+    height: 75px;
+    width: 400px;
+    border: 2px solid rgb(226, 221, 221);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+#limited
+{
+    margin-left: 30px;
+    color: rgb(101, 101, 240);
+}
+#Delivery_details
+{
+    margin-left: 100px;
+    margin-top: 30px;
+}
+#div19
+{
+    height: 100px;
+    width: 1310px;
+    border: 2px solid rgb(206, 202, 202);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    margin-left: 100px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+#pin_para
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+#hr1
+{
+    width: 1310px;
+    margin-top: 70px;
+    margin-left: 100px;
+    border: 1px solid rgb(206, 202, 202);
+}
+#exchange,#offer
+{
+    margin-left: 100px;
+}
+#exchange
+{
+    margin-top: 50px;
+}
+#offer
+{
+    margin-top: 10px;
+}
+#div20
+{
+    height: 120px;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    padding-left: 100px;
+    /* gap: 20px; */
+}
+#div20>.child
+{
+    height: 70px;
+    width: 600px;
+    border: 2px solid rgb(203, 196, 196);
+}
+.child1
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.child2{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-right: 100px;
+}
+#Yes
+{
+    font-weight: bold;
+    font-size: 20px;
+}
+.child2>p{
+    font-weight: bold;
+}
+#hr2
+{
+     width: 1310px;
+    margin-top: 70px;
+    margin-left: 100px;
+    border: 1px solid rgb(206, 202, 202);
+}
+#img_div
+{
+    height: 700px;
+    width: 100%;
+    /* border: 2px solid red; */
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/home/09-2025/Galaxy-S25-FE-Ecosystem_Home_Feature_KV_pc_1440x810_LTR.jpg?$1440_N_JPG$);
+    margin-top: 30px;
+    width: 1310px;
+    margin-left: 100px;
+}
+#div22
+{
+    height: 400px;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+#div22>#child1,#div22>#child2,#div22>#child3,#div22>#child4
+{
+    height: 300px;
+    width: 300px;
+    /* border: 2px solid green;  */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* background-color: black; */
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/mx_2507/Galaxy-Z-Flip7_Home_Feature_Card_560x560.jpg?$560_560_JPG$);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 20px;
+    transition: all 0.5s;
+}
+#div22>#child1>img
+{
+    height: 280px;
+    width: 300px;
+}
+#div22>#child1>p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    
+}
+#div22>#child2
+{
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/mx_2507/HOME_Feature-Card_Watch8-Classic_560x560.jpg?$560_560_JPG$);
+    /* transition: all 0.5s; */
+}
+#div22>#child3
+{
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/mx_2507/HOME_Feature-Card_Watch8_560x560.jpg?$560_560_JPG$);
+}
+#div22>#child4
+{
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/home/250911/TabS10_Lite_featured_cards_560x560.jpg?$560_560_JPG$);
+}
+#div22>#child1:hover,#div22>#child2:hover,#div22>#child3:hover,#div22>#child4:hover
+{
+    scale: 1.1;
+}
+/* doing tapan */
+#inner-child{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+
+}
+#inner-child-right-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10;
+}
+#inner-child-right{
+    height: 800px;
+    width: 1200px;
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/home/250717/VD-KV-PC_1440x810.png?$1440_N_PNG$);
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    margin-right: 80px;
+    margin-left: -100px;
+}
+#inner-child-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 70px;
+    margin-right: -100px;
+}
+#inner-child-left>p {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#inner-child-left>span{
+    font-size: 22px;
+}
+#inner-child-button{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-top: 15px;
+    font-family: 'SamsungOne', arial, sans-serif;
+}
+#inner-child-button>#btn-two{
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 20px;
+    border: 1px solid black;
+    color: black;
+    width: 90px;
+    height: 35px;
+    text-align: center;
+    margin-left: -50px;
+    margin-right: 80px;
+}
+#inner-child-button>#btn-one{
+    text-decoration: none;
+    margin-left: -28px;
+    color: black;
+    font-size: 17px;
+    width: 90px;
+    text-align: center;
+    padding-bottom: 3px;
+    border-bottom: 2px solid black;
+     margin-left: -5px;
+}
+#inner-child-button>#btn-two:hover{
+    background-color: black;
+    color: white;
+    
+}
+#samsung-image-div{
+    display: grid;
+    grid-template-columns: repeat(4,3fr);
+     padding-left: 15px;
+    padding-right: 10px;
+}
+#samsung-card-one,#samsung-card-two,#samsung-card-three,#samsung-card-four{
+    height: 350px;
+    width: 350px;
+    text-align: center;
+    padding-top: 20px;
+     transition: all 0.5s;
+}
+#samsung-card-one>a,#samsung-card-two>a,#samsung-card-three>a,#samsung-card-four>a{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+   font-weight: bold;
+   font-family: 'SamsungOne', arial, sans-serif;
+}
+#samsung-card-one:hover,#samsung-card-two:hover,#samsung-card-three:hover,#samsung-card-four:hover{
+    scale: 1.1;
+     /* transition: all 0.5s; */
+}
+#samsung-card-one{
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/ux3/home/MDVD_Feature_Card1_560X560.jpg?$560_560_JPG$);
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+#samsung-card-two{
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/ux3/home/MDVD_Feature_Card2_560X560.jpg?$560_560_JPG$);
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+#samsung-card-three{
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/ux3/home/MDVD_Feature_Card3_560X560.jpg?$560_560_JPG$);
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+#samsung-card-four{
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/home/250807/M7.jpg?$560_560_JPG$);
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+#samsung-Washer-img{
+    padding: 20px;
+    margin-top: 30px;
+}
+#Washer-img{
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/home/250829/Washer_Dryer_KV_PC_1440x810_withoutText.jpg?$1440_N_JPG$);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position:center; */
+    height: 850px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#Washer-para{
+    margin-left: 100px;
+    margin-right: -400px;
+    display: flex;
+    flex-direction: column;
+}
+#Washer-para>p{
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: 'SamsungOne', arial, sans-serif;
+}
+#Washer-para>span{
+    color: white;
+    font-size: 25px;
+}
+#Washer-para>a{
+    margin-top: 10px;
+    padding: 9px;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    width: 70px;
+    height: 35px;
+    text-align: center;
+    border-radius: 20px;
+}
+#Washer-para>a:hover{
+    background-color: white;
+    color: black;
+}
+#footer-service{
+    margin-top: 50px;
+    display:grid;
+    grid-template-columns: repeat(5,3fr);
+    padding: 20px;
+}
+#service-card,#service-card-one{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 296px;
+    border: 1px solid rgb(203, 201, 201);
+    padding-left: 25px;
+    border-right: none;
+}
+#service-card>p,#service-card-one>p{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'SamsungOne', arial, sans-serif;
+}
+#service-card>a,#service-card-one>a{
+    margin-top: 15px;
+    text-decoration: none;
+    color: rgb(40, 39, 39);
+    font-size: 13px;
+    font-family: 'SamsungOne', arial, sans-serif;
+}
+#service-card-one{
+    border-left:none ;
+}
+#service-card>a:hover,#service-card-one>a:hover{
+    text-decoration: underline;
+    color: rgb(98, 98, 243);
+}
+#footer-para{
+   
+    border-bottom: 1px solid rgb(211, 211, 211);
+    height: 200px;
+    
+}
+#footer-para>pre{
+    margin-left: 30px;
+    color:rgb(43, 41, 41);
+    font-family: 'SamsungOne', arial, sans-serif;
+    font-size: 11px;
+    word-spacing: 2px;
+    line-height: 18px;
+}
+#Recommended
+{
+    margin-left: 100px;
+}
+#Explore
+{
+    margin-left: 100px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <style>
+        .parent
+        {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .childerne
+        {
+            height: 200px;
+            width: 200px;
+            transition: all 1s;
+            border-radius: 10px;
+        }
+        #linear{background-image: linear-gradient(45deg,red,green,blue,aqua);}
+        #radial{background-image: linear-gradient(red,black,white,blue);}
+        #conic{background-image: linear-gradient(red,blue,green,orangered);}
+        #linear:hover,#radial:hover,#conic:hover
+        {
+            transform: scale(1.2);
+        }
+        p{font-size: 25px;}
+        h1{
+            text-align: center;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            background-image: linear-gradient(90deg,#c778f4 0%,#ff5672 100%);
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Gradients</h1>
+    <div class="parent">
+        <div class="childerne" id="linear"></div>
+        <div class="childerne" id="radial"></div>
+        <div class="childerne" id="conic"></div>
+    </div>
+    <div class="parent">
+        <p>Linear</p>
+        <p>Radial</p>
+        <p>Conic</p>
+    </div>
+  </body>
+</html>

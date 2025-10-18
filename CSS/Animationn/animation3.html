@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <style>
+        div{
+            height: 200px;
+            width: 400px;
+            /* background-color: blueviolet; */
+            animation-name: div1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            /* margin-top: 100px;
+            margin-left: 100px; */
+            /* border-radius: 50%; */
+        }
+        #div1
+        {
+            background-color: red;
+        }
+        #div2
+        {
+            background-color: blue;
+            animation-delay: 2s;
+        }
+        #div3
+        {
+            background-color: green;
+            animation-delay: 4s;
+        }
+        @keyframes div1 {
+           from
+           {
+               width: 400px;
+           }
+           to
+           {
+                width: 600px;
+           }
+        }
+    </style>
+  </head>
+  <body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+  </body>
+</html>

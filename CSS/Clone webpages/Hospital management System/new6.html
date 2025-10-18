@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Add Patient</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+nav {
+	height: 150px;
+	width: 100%;
+	border: 1px solid white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    background-color: white;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 14px;
+	/* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+
+#div1 {
+	display: flex;
+	/* justify-content: center; */
+	align-items: center;
+	gap: 50px;
+	padding-left: 10px
+}
+
+#img1 {
+	height: 130px;
+	width: 130px;
+}
+
+.navbar {
+	/* background: #007BFF; */
+	padding: 15px;
+	display: flex;
+	/* justify-content: flex-end; */
+	align-items: center;
+	gap: 20px;
+	height: 50px;
+}
+
+.navbar a {
+	color: blue;
+	text-decoration: none;
+	margin: 0 20px;
+	font-weight: bold;
+}
+
+.navbar a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 45px;
+	color: rgba(100, 208, 181, 0.724);
+}
+
+h2 {
+	margin-top: 50px;
+}
+
+body {
+	font-family: Arial;
+	background: #f4f4f4;
+}
+
+.msg {
+	text-align: center;
+	color: green;
+	font-weight: bold;
+}
+
+a {
+	font-size: 20px;
+	/* background-color: red; */
+	text-decoration: none;
+	color: gray;
+}
+
+.add_patient2 {
+	
+	font-weight: 500;
+}
+.generate_bill
+{
+	color: rgb(0, 128, 255);
+}
+
+#main {
+	height: 800px;
+	width: 100%;
+	/* border: 2px solid red; */
+	display: flex;
+	justify-content: space-between;
+	/* align-items: center; */
+}
+
+#side_navbar {
+	height: 800px;
+	width: 300px;
+	/* border: 2px solid green; */
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 2px;
+	background-color: rgba(190, 207, 214, 0.575);
+	/* padding: 10px; */
+	/* padding-left: 50px; */
+}
+
+i {
+	height: 50px;
+	width: 50px;
+	background-color: red;
+}
+
+#user {
+	opacity: 0.7;
+	height: 40px;
+	width: 40px;
+	margin-right: 100px;
+}
+
+.add_patient {
+	background-color: rgb(230, 234, 237);
+	height: 60px;
+	width: 300px;
+	border-radius: 5px;
+	display: flex;
+	/* justify-content: center; */
+	align-items: center;
+	padding-right: 20px;
+	padding-left: 90px;
+	/* border: 1px solid gray; */
+	transition: all 0.3s;
+	font-size: 20px;
+}
+
+.add_patient:hover {
+	background-color: skyblue;
+	color: white;
+}
+
+#div2 {
+	margin-top: 100px;
+	margin-right: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+#div2>h3 {
+	font-size: 30px;
+}
+
+#div2>#view_patient {
+	color: orangered;
+}
+
+#div2>#view_patient:hover {
+	text-decoration: underline;
+}
+
+#div3 {
+	margin-right: 400px;
+	/* margin-top: 20px; */
+	/* border: 2px solid red; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 50px;
+}
+#div3>h2{
+	font-size: 40px;
+	color: darkcyan;
+}
+#div3>form>input
+{
+	height: 70px;
+	width: 400px;
+	border-radius: 50px;
+	padding: 20px;
+	font-size: 20px;
+	border: 1px solid gray;
+	outline: none;
+}
+#div3>form>input:hover
+{
+	background-color: rgb(248, 245, 245);
+}
+#div3>form>button{
+	height: 60px;
+	width: 130px;
+	border-radius: 30px;
+	font-size: 23px;
+	margin-left: 10px;
+	background-color: rgba(199, 233, 233, 0.632);
+	border: 1px solid gray;
+	transition: all 0.9s;
+}
+#div3>form>button:hover{
+	background-color: aliceblue;
+	color: orange;
+	box-shadow: 0px 0px 5px 0px orangered;
+}
+#view_bill {
+	margin-left : 560px;
+	font-size : 20px;
+}
+#img2{
+    height: 50px;
+    width: 50px;
+    margin-top: -30px;
+    margin-right: 80px;
+}
+</style>
+</head>
+
+
+<body>
+	<nav>
+		<div id="div1">
+			<img id="img1" src="https://t3.ftcdn.net/jpg/05/14/36/48/360_F_514364850_xLOQX6SOY2qcjAIcTowsi3xYvHmhmvs0.jpg" alt="">
+			<h1>Smart HealthCare</h1>
+		</div>
+		<div class="navbar">
+			<img id="img2"
+				src="https://i.pinimg.com/564x/57/00/c0/5700c04197ee9a4372a35ef16eb78f4e.jpg"
+				alt="" id="user">
+		</div>
+	</nav>
+	<div id="main">
+		<div id="side_navbar">
+			<a href="#dashboar" id="addPatient">
+				<div class="add_patient add_patient1">Dashboard</div>
+			</a> <a href="add_patient.jsp">
+				<div class="add_patient add_patient2">Add Patient</div>
+			</a> <a href="view_patient.jsp" target="_self">
+				<div class="add_patient add_patient3">View Patients</div>
+			</a> <a href="generate_bill.jsp">
+				<div class="add_patient  generate_bill">Generate Bill</div>
+			</a> <a href="view_bill.jsp">
+				<div class="add_patient add_patient5">View Bills</div>
+			</a> <a href="logout.jsp">
+				<div class="add_patient add_patient6">Logout</div>
+			</a>
+		</div>
+		<div id="div3">
+			<h2>Generate Bill</h2>
+			<form action="billing.jsp" method="post">
+				<input type="search" name="patient_id" placeholder="Search by patient ID">
+				<button>Search</button>
+			</form>
+			
+		</div>
+	</div>
+
+
+</body>
+
+</html>
